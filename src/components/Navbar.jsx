@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between mobile:justify-start fixed top-0 z-0 w-full px-10 mobile:px-2 border-b pb-4 mobile:relative">
+    <div className="flex justify-between mobile:justify-start fixed top-7 z-0 w-full px-10 mobile:px-2 border-b pb-4 mobile:relative">
       <div className="flex items-center gap-5">
         <img src={logo} alt="Logo" className="animate-bounce" />
         <p className="animate-pulse">Berita Kini</p>
