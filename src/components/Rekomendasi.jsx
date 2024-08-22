@@ -9,7 +9,7 @@ import rekomendasi7 from "../assets/rekomendasi7.png";
 import rekomendasi8 from "../assets/rekomendasi8.png";
 import arrowrekom1 from "../assets/arrowrekom.png";
 import arrowrekom2 from "../assets/arrowrekom2.png";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const Rekomendasi = () => {
   const [pageRekom, setPageRekom] = useState(1);
@@ -17,15 +17,13 @@ const Rekomendasi = () => {
     setPageRekom(value);
   };
 
-  const wiggle = useRef();
-
   return (
-    <div className="mt-32" ref={wiggle}>
+    <div className="mt-32">
       <div className="flex justify-between items-center">
         <p className="font-bold border-l-4 border-blue-500 pl-3 h-fit">
           Rekomendasi Untuk Anda
         </p>
-        <div className="relative w-4/12 mobile:2/12 mobile:h-6">
+        <div className="relative w-4/12  mobile:h-6">
           <input
             type="text"
             placeholder="Cari disini..."

@@ -15,7 +15,6 @@ export default {
           from: {
             opacity: 0,
             clipPath: "inset(100% 100% 0 0)",
-            transform: "rotate(0deg)",
           },
           to: {
             opacity: 1,

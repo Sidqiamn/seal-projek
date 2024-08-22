@@ -7,8 +7,6 @@ import panahkiri from "../assets/panahkiri.png";
 
 const Hero = () => {
   const [countHeroPage, countSetHeroPage] = useState(1);
-  console.log(countSetHeroPage);
-  console.log(countHeroPage);
   return (
     <div className="mt-20 mobile:mt-0 animate-wiggle">
       <div className="flex gap-20 justify-between mobile:flex-col mobile:items-center">
@@ -35,7 +33,7 @@ const Hero = () => {
             </span>
           </h6>
         </div>
-        <div className=" mr-auto">
+        <div className=" ml-auto">
           <img className="rounded-xl" src={footbalimg} alt="" />
         </div>
       </div>
@@ -43,8 +41,6 @@ const Hero = () => {
       <div className="flex gap-4 w-fit mx-auto mt-10">
         <img
           onClick={() => {
-            console.log("tambah", countHeroPage);
-
             if (countHeroPage !== 1) {
               countSetHeroPage((prev) => prev - 1);
             }
